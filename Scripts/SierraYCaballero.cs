@@ -51,6 +51,8 @@ public class SierraYCaballero : MonoBehaviour
         direccion *=-1;
         rb.velocity=new Vector2(rb.velocity.x,0);
         parado=true;
+        if(veloCaballero > 0)
+            transform.localScale = new Vector3(transform.localScale.x * (-1f), 0.65f, 1.0f);
         }
     }
 
